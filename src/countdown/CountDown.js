@@ -1,14 +1,26 @@
-import React, { useState, useEffect, componentDidMount, componentWillMount } from "react";
+import React, { useState, useEffect, componentDidMount, componentWillMount, useRef } from "react";
 import huhu from "./huhu.gif"
 
 const CountdownTimer = () => {
   const [counter, setCounter] = React.useState();
   const targetDate =  Math.round(new Date("Feb 23, 2024 00:00:00").getTime());
   const now = Math.round(Date.now());
+  const timerRef = useRef();
 
   setInterval(() => {
     setCounter(targetDate - now);
   }, 1000);
+
+  useEffect(() => {
+    //startTimer
+    timerRef.current = setInterval(() => {
+      setCounter((prev) => prev - 1);
+    }, 1000);
+
+    return () => {
+      clearInterval(timerRef.current);
+    };
+  }, []);
 
   const calculateTimeLeft = () => {
     const calcMinutes = 1000 * 60 * 60;
@@ -42,23 +54,6 @@ const CountdownTimer = () => {
       </div>
     );
   };
-
-
-  // componentDidMount = () => { 
-  //   
-  // }
-
-  // componentWillMount = () => (
-  //   clearInterval();
-  // )
-
-  useEffect(() => {
-    const interval = setInterval(() => setCounter(prevCount => prevCount - 1), 1000);
-  
-    return () => {
-      clearInterval(interval)
-    }
-  }, [counter])
   
 
   return (

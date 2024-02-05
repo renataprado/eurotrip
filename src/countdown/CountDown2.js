@@ -7,6 +7,11 @@ const secondsToHHMMSS = (seconds) => {
   return new Date(seconds * 1000).toISOString().substr(11, 8);
 };
 
+const secondsToDays = (seconds) => {
+  // console.log(seconds);
+  return Math.round(seconds / (3600*24)).toString();
+};
+
 export default function CountDown2() {
   const timerRef = useRef();
   const inputRef = useRef();
@@ -20,6 +25,7 @@ export default function CountDown2() {
     timerRef.current = setInterval(() => {
       setCurrentTime((prev) => prev - 1);
     }, 1000);
+
     return () => {
       clearInterval(timerRef.current);
     };
@@ -35,7 +41,7 @@ export default function CountDown2() {
   return (
     <div className="App">
 
-      <div className="time">{secondsToHHMMSS(currentTime)}</div>
+      <div className="time">{secondsToDays(currentTime)}{secondsToHHMMSS(currentTime)}</div>
     </div>
   );
 }
