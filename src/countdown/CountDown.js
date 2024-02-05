@@ -29,7 +29,29 @@ const CountdownTimer = () => {
     const minutes = Math.floor((timeLeft % calcMinutes) / (1000 * 60)).toString().padStart(2, '0');
     const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000).toString().padStart(2, '0');
 
-    return `${days} dias, ${hours} horas, ${minutes} minutos e ${seconds} segundos`;
+    return(
+      <div className="countdown-time__display">
+        <div  className="countdown-time__content">
+        <div>
+          <div>{days}</div>
+          <div className="countdown-time__unit">dias</div>
+        </div>
+        <div>
+          <div>{hours}</div>
+          <div  className="countdown-time__unit">horas</div>
+        </div>
+        <div>
+          <div>{minutes}</div>
+          <div className="countdown-time__unit">minutos</div>
+        </div>
+        <div>
+          <div>{seconds}</div>
+          <div className="countdown-time__unit">segundos</div>
+        </div>
+        </div>
+       
+      </div>
+    )
   };
 
   return (
