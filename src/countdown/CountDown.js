@@ -1,6 +1,13 @@
 import React, { useState, useEffect, componentDidMount, componentWillMount, useRef } from "react";
 import huhu from "./huhu.gif"
 
+const secondsToHHMMSS = (seconds) => {
+  if (seconds < 3600)
+    return new Date(seconds * 1000).toISOString().substr(14, 5);
+
+  return new Date(seconds * 1000).toISOString().substr(11, 8);
+};
+
 const CountdownTimer = () => {
   const [counter, setCounter] = React.useState();
   const targetDate =  Math.round(new Date("Feb 23, 2024 00:00:00").getTime());

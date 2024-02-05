@@ -8,6 +8,7 @@ function App() {
   return (
     <div className="App">
       <CountdownTimer />
+      <CountDown2 />
     </div>
   );
 }

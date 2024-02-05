@@ -41,7 +41,7 @@ export default function CountDown2() {
   return (
     <div className="App">
 
-      <div className="time">{secondsToDays(currentTime)}{secondsToHHMMSS(currentTime)}</div>
+      <div className="time">{secondsToHHMMSS(currentTime)}</div>
     </div>
   );
 }
