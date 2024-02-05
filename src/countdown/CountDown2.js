@@ -1,47 +1,65 @@
-import { useEffect, useState, useRef } from "react";
+// import { useEffect, useState, useRef } from "react";
 
-const secondsToHHMMSS = (seconds) => {
-  if (seconds < 3600)
-    return new Date(seconds * 1000).toISOString().substr(14, 5);
+// const secondsToHHMMSS = (seconds) => {
+//   if (seconds < 3600)
+//     return new Date(seconds * 1000).toISOString().substr(14, 5);
 
-  return new Date(seconds * 1000).toISOString().substr(11, 8);
-};
+//   return new Date(seconds * 1000).toISOString().substr(11, 8);
+// };
 
-const secondsToDays = (seconds) => {
-  // console.log(seconds);
-  return Math.round(seconds / (3600*24)).toString();
-};
+// export default function Count() {
+//   const timerRef = useRef();
+//   const inputRef = useRef();
 
-export default function CountDown2() {
-  const timerRef = useRef();
-  const inputRef = useRef();
+//   const [currentTime, setCurrentTime] = useState(0);
+  
+//   timerRef.current = setInterval(() => {
+//     setCurrentTime((prev) => prev - 1);
+//   }, 1000);
 
-  const [currentTime, setCurrentTime] = useState(Math.round(Date.now() / 1000));
+//   useEffect(() => {
+//     return () => {
+//       clearInterval(timerRef.current);
+//     };
+//   }, []);
 
-  //Using new Date().getTime() / 1000 is an incomplete solution for obtaining the seconds, because it produces timestamps with floating-point units.
+//   const startTimer = () => {
 
-  useEffect(() => {
-    //startTimer
-    timerRef.current = setInterval(() => {
-      setCurrentTime((prev) => prev - 1);
-    }, 1000);
+//   };
 
-    return () => {
-      clearInterval(timerRef.current);
-    };
-  }, []);
+//   useEffect(() => {
+//     if (currentTime === 0) {
+//       clearInterval(timerRef.current);
+//     }
+//   }, [currentTime]);
 
-  useEffect(() => {
-    if (currentTime === 0) {
-      clearInterval(timerRef.current);
-    }
-  }, [currentTime]);
+//   const handleStart = (e) => {
+//     e.preventDefault();
 
+//     if (timerRef.current) {
+//       clearInterval(timerRef.current);
+//     }
 
-  return (
-    <div className="App">
+//     const secondsInput = 1000;
 
-      <div className="time">{secondsToHHMMSS(currentTime)}</div>
-    </div>
-  );
-}
+//     setCurrentTime(() => secondsInput);
+
+//     startTimer();
+//   };
+
+//   return (
+//     <div className="App">
+//       <form onSubmit={handleStart}>
+//         <input
+//           type="number"
+//           placeholder="Enter total seconds to countdown"
+//           ref={inputRef}
+//         />
+
+//         <button type="submit">Start</button>
+//       </form>
+
+//       <div className="time">{secondsToHHMMSS(currentTime)}</div>
+//     </div>
+//   );
+// }
