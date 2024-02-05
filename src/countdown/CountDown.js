@@ -1,4 +1,5 @@
-import React, { useState, useEffect, componentDidMount } from "react";
+import React, { useState, useEffect, componentDidMount, componentWillMount } from "react";
+import huhu from "./huhu.gif"
 
 const CountdownTimer = () => {
   const [counter, setCounter] = React.useState();
@@ -19,22 +20,23 @@ const CountdownTimer = () => {
 
     return(
       <div className="countdown-time__display">
+        <div  className="countdown-time__content">
         <div>
           <div>{days}</div>
-          <div>dias</div>
+          <div className="countdown-time__unit">dias</div>
         </div>
         <div>
           <div>{hours}</div>
-          <div>horas</div>
+          <div  className="countdown-time__unit">horas</div>
         </div>
         <div>
           <div>{minutes}</div>
-          <div>minutos</div>
+          <div className="countdown-time__unit">minutos</div>
         </div>
-        
         <div>
           <div>{seconds}</div>
-          <div>segundos</div>
+          <div className="countdown-time__unit">segundos</div>
+        </div>
         </div>
        
       </div>
@@ -42,17 +44,28 @@ const CountdownTimer = () => {
   };
 
 
-  componentDidMount = () => { 
-    setInterval(() => setCounter(prevCount => prevCount - 1), 1000);
-  }
+  // componentDidMount = () => { 
+  //   
+  // }
 
+  // componentWillMount = () => (
+  //   clearInterval();
+  // )
 
-
+  useEffect(() => {
+    const interval = setInterval(() => setCounter(prevCount => prevCount - 1), 1000);
+  
+    return () => {
+      clearInterval(interval)
+    }
+  }, [counter])
+  
 
   return (
     <div className="countdown-time">
-      <h3> Contagem Regressiva </h3>
+      <h2> EUROTRIP PORRA</h2>
       {calculateTimeLeft()}
+      <img src={huhu} />
     </div>
   );
 };
