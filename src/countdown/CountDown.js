@@ -3,8 +3,8 @@ import huhu from "./huhu.gif"
 
 const CountdownTimer = () => {
   const [counter, setCounter] = React.useState();
-  const targetDate = new Date("Feb 23, 2024 00:00:00").getTime();
-  const now = new Date().getTime();
+  const targetDate =  Math.round(new Date("Feb 23, 2024 00:00:00").getTime());
+  const now = Math.round(Date.now());
 
   setInterval(() => {
     setCounter(targetDate - now);
