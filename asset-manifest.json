@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/eurotrip/static/css/main.abd8c7e3.css",
+    "main.js": "/eurotrip/static/js/main.c6295875.js",
+    "static/js/592.0b8b484a.chunk.js": "/eurotrip/static/js/592.0b8b484a.chunk.js",
+    "static/media/huhu.gif": "/eurotrip/static/media/huhu.2ebb79fbfd988530057a.gif",
+    "static/media/logo.svg": "/eurotrip/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/eurotrip/index.html",
+    "main.abd8c7e3.css.map": "/eurotrip/static/css/main.abd8c7e3.css.map",
+    "main.c6295875.js.map": "/eurotrip/static/js/main.c6295875.js.map",
+    "592.0b8b484a.chunk.js.map": "/eurotrip/static/js/592.0b8b484a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abd8c7e3.css",
+    "static/js/main.c6295875.js"
+  ]
+}
