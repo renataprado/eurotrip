@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Home from './home/Home';
 import CountdownTimer from './countdown/CountDown';
@@ -6,7 +5,7 @@ import CountdownTimer from './countdown/CountDown';
 function App() {
   return (
     <div className="App">
-      <CountdownTimer />
+      <Home />
     </div>
   );
 }

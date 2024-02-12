@@ -1,5 +1,6 @@
 
 @import './countdown/countDown.scss';
+@import './home/home.css';
 
 .App {
   text-align: center;

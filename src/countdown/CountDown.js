@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import huhu from "./huhu.gif";
 
 const CountdownTimer = () => {
   const [counter, setCounter] = useState(calculateTimeLeft());
@@ -56,9 +55,7 @@ const CountdownTimer = () => {
 
   return (
     <div className="countdown-time">
-      <h2>EUROTRIP PORRA</h2>
       {counter}
-      <img src={huhu} alt="huhu" />
     </div>
   );
 };

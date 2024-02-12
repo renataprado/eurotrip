@@ -1,31 +1,38 @@
 
 .countdown-time{
-  height: 60%;
   display: flex;
   align-items: center;
   flex-direction: column;
   color: white;
 }
 
+
+
+img {
+  opacity: 0.5;
+}
+
+
+
 .countdown-time__display{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
-  margin: 30px;
+  width: 100%;
 }
 
 .countdown-time__content > div{
-  font-size: 32px;
+  font-size: 52px;
   font-family: "Trebuchet MS", Verdana, sans-serif;
-  margin: 10px;
+  margin: 18px;
 }
 
 .countdown-time__content{
-  display: flex;
+  justify-content: center;
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
 .countdown-time__unit{
-  font-size: 14px;
+  font-size: 24px;
 }
