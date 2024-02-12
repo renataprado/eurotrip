@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "eurotrip-414120",
+  "private_key_id": "f55ae1590613e418de7471f40a00b91372de0306",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC/Jgg+Mbnqz9wg\nGC2SeWEba4SE0K1KqiCRFdAS+cjkvDZosh/yTe5O+kgVzM7oHB3eNsjFE06B+gl0\ny5qhMcHfX6N9tNqtcMQr1k2jyAjLMAhaQufticswfB9j2XCF/jLcjs4tBkcLGexg\nIg4MhvC3N1RDuRVO1aevXh4PkFGkOqTZa5fM79Z4P0Elwc/gSFeJbUcfFJPZVAF0\nYFYIky/4VEM5vanl4MCe5ofdA4GHRWfuVyZk0oePS6jmTecTSxUq59vdrNqc7SBp\nrw98q1wP9d88X6BZAcuNzKQ4VAeqHNaJJEbGTEcEmacX9OhYChANgtXbB2znb/dD\n7VDIIp41AgMBAAECggEACh6L0isUwhsV9rcA9p+pZee3wMZBXlIKXlPuy4pgucdD\nBCDl8xBwHMtANLM+gug2JpT05QYEInpntMCwo3b8YgRwpc+EwijVodJ7EsAcwxD8\naDbhi2A/mwX/LWyN+fH+pFGFFboe2bYaHu6+mqgsJy7tLZanS6Cg+3Y6li1YPR7r\n/zks/aZ+oHr6vePQ8g6RG8CjgxVOVTxjvTmyxCL0LfEce/ddqGPTvcUho+9rcIff\nraroVh1qJw+LTKm2YP+SzUf2/kf2xepXEk1VWKhDLXxgc6NS2BdPDAE3iWXB+ypc\nSS9Hzk+82dmgbiJGEJT5ixDJwnuE0vWRx/XjOamo0wKBgQD/r8O83lhkvHzLjDtr\nM/1TWe3n4Yp2ZYlrVA0hNqBLQTnEeKcy5RD/vfBOgyX4O47KOy0jP9o8AHm6J1ns\nfb6+jA4SQ5XMf91KMu7OOMXyDydGlXwUQHeQm2p0waVdp1pwDwP3B7K39k+CnN4T\nObtYUHZB3BwW/1o2UQdtSlx02wKBgQC/YgPslGOzLu50zDYpzSB3c84U/tXAcTFC\n4ylCe5D0zuo1Lx0PPcvxm22USYRy+qxhmSX0KgroBckDy+bOE2S65/1eclwKeFOc\nK7oeqQxsDQO6CfaC8+TdsfxlD4IIWgXYGpsEn64rgyGTlUSji4Hz6GknxNRKsVf+\n48vdjD6eLwKBgHzTV1EOj8LmTlqlJKEKqaMWpVHuR0XT/km6qApN++Whe01SxfXP\n5QOlu/rohhHxKZ3LVBcAZk+iv8rEyV7uaL/n6jq6ahiDWAqQYQumpeStxzPraL8O\nVhDv/wHvRAc726gXfI0OYg7zng+a+8QRDEhqR8GRbtk/YtBfsKuHgSm/AoGAZdQK\n7nfNzGruKWr2bqtb2PLe9cDZjnkrksE3FM6WRAtMBlw5BAEHYFgop7uuI1dJHOzV\niuJLx0Q8vi5hcchT0jbZUsVaP5/iLLf/YYzktSD/mJ7wcKDAZ0zqVAM6VqM/dMpD\nLOShUTmGRfYn/TSfQl2ohaZupgdSIKantAuIzbUCgYBf/3gkSs43dcZMUaTLmh7g\nFo36nMPo6EpHtsI5kZ8g7AtONOzV1N1Xm39SyoblwZi4H2/6F5YpNl1PE/YBzH76\niI5ecsDzPFx7ZFiXQ5x61HT/98Nm8sSFopVYZ93W/1eyih+jJ0GfEattqBbTaRFr\ni18HQWvdfT++cfJeGw6IoA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "eurotrip-drive@eurotrip-414120.iam.gserviceaccount.com",
+  "client_id": "106075381648841242646",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/eurotrip-drive%40eurotrip-414120.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
