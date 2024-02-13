@@ -8,7 +8,8 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route
-          path="/"
+          path="/eurotrip"
+          exact
           element={
             <div className="App">
               <Home />
