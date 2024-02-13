@@ -1,15 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-import Home from './home/Home';
-import CountdownTimer from './countdown/CountDown';
-import CountDown2 from './countdown/CountDown2';
+import "./App.css";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import Home from "./home/Home";
+import Documents from "./documents/Documents";
 
 const App = () => {
   return (
-    <div className="App">
-      <CountdownTimer />
-      <CountDown2 />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/eurotrip"
+          exact
+          element={
+            <div className="App">
+              <Home />
+            </div>
+          }
+        />
+        <Route path="/documents" element={<Documents />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 };
 
