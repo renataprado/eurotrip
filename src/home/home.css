@@ -2,7 +2,6 @@
 @import '../countdown/countDown.scss';
 
 .home {
-  height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -17,5 +16,9 @@
 
 img {
   opacity: 0.5;
+  width: 100%;
+}
+
+.contdown-container{
   width: 100%;
 }
