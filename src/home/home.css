@@ -1,4 +1,6 @@
 
+@import '../countdown/countDown.scss';
+
 .home {
   height: 100vh;
   display: flex;
@@ -12,17 +14,8 @@
   font-family: "Trebuchet MS", Verdana, sans-serif;
   margin: 10px;
 }
-/* .countdown-container{
-  border: 1px solid red;
-  height: 70%;
-  margin: 30px;
-} */
 
-.countdown-time__content > div{
-  
-}
-
-.countdown-time__content{
-  display: flex;
-  background-color: rgba(255, 255, 255, 0.1);
+img {
+  opacity: 0.5;
+  width: 100%;
 }

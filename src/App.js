@@ -16,7 +16,7 @@ const App = () => {
             </div>
           }
         />
-        <Route path="/documents" element={<Documents />}></Route>
+        <Route path="/eurotrip/documents" element={<Documents />}></Route>
       </Routes>
     </BrowserRouter>
   );

@@ -7,9 +7,9 @@ const Home = () => {
   return (
     <div className="home">
       <h2>EUROTRIP PORRA</h2>
-      <div class="countdown-container">
+      <div className="countdown-container">
         <CountdownTimer />
-        <a  href="/documents" >
+        <a href="/eurotrip/documents" >
           <img src={huhu} alt="huhu"/>
         </a>
       </div>

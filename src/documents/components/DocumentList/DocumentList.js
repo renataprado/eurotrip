@@ -1,8 +1,11 @@
+import FileUpload from "../FileUpload/FileUpload";
+
 
 const DocumentList = () => {
   return (
     <div className="document-list">
       <h2>Documents List</h2>
+      <FileUpload />
     </div>
   );
 }
