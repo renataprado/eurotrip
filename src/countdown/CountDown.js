@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 
-const CountdownTimer = () => {
+const CountdownTimer = ({setChegou}) => {
   const [counter, setCounter] = useState(calculateTimeLeft());
-  const targetDate = new Date("Feb 23, 2024 08:50:00").getTime();
+  const targetDate = new Date("Feb 22, 2024 18:00:00").getTime();
   const timerRef = useRef();
 
   useEffect(() => {
@@ -11,7 +11,8 @@ const CountdownTimer = () => {
       const timeLeft = targetDate - now;
       if (timeLeft <= 0) {
         clearInterval(timerRef.current);
-        setCounter("Chegou o grande dia!");
+        setCounter(calculateTimeLeft(0));
+        setChegou(true);
       } else {
         setCounter(calculateTimeLeft(timeLeft));
       }
