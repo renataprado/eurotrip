@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/eurotrip/static/css/main.9a569aec.css",
-    "main.js": "/eurotrip/static/js/main.ecc44363.js",
+    "main.css": "/eurotrip/static/css/main.c078ccb1.css",
+    "main.js": "/eurotrip/static/js/main.0e1b4adb.js",
     "static/js/592.0b8b484a.chunk.js": "/eurotrip/static/js/592.0b8b484a.chunk.js",
+    "static/media/map0.gif": "/eurotrip/static/media/map0.ac7aaccbd76518ea45f5.gif",
     "static/media/huhu.gif": "/eurotrip/static/media/huhu.2ebb79fbfd988530057a.gif",
     "index.html": "/eurotrip/index.html",
-    "main.9a569aec.css.map": "/eurotrip/static/css/main.9a569aec.css.map",
-    "main.ecc44363.js.map": "/eurotrip/static/js/main.ecc44363.js.map",
+    "main.c078ccb1.css.map": "/eurotrip/static/css/main.c078ccb1.css.map",
+    "main.0e1b4adb.js.map": "/eurotrip/static/js/main.0e1b4adb.js.map",
     "592.0b8b484a.chunk.js.map": "/eurotrip/static/js/592.0b8b484a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a569aec.css",
-    "static/js/main.ecc44363.js"
+    "static/css/main.c078ccb1.css",
+    "static/js/main.0e1b4adb.js"
   ]
 }
